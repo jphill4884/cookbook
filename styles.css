@@ -1,0 +1,199 @@
+:root {
+    --max-width: 1200px;
+  }
+  
+  body {
+    font-family: Roboto, sans-serif;
+    background-color: #606060;
+    color: #f1f1f1;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+  }
+  
+  hr {
+    color: #f1f1f1;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
+  header {
+    display: flex;
+    height: 69px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #f1f1f1;
+    position: fixed;
+    z-index: 1;
+    background-color: #404040;
+    width: 100%;
+  }
+  
+  header img {
+    height: 69px;
+    width: 69px;
+  }
+  
+  .navlinks {
+    display: flex;
+    flex-flow: row;
+  }
+  
+  .navlinks > li {
+    margin: 0 0.8rem;
+  }
+  
+  header a {
+    color: #f1f1f1;
+    text-decoration: none;
+  }
+  
+  main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 20px;
+  }
+  
+  .mission {
+    padding-top: 90px;
+    max-width: var(--max-width);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .mission img {
+    height: 450px;
+    opacity: 0.8;
+    padding-right: 20px;
+  }
+  
+  .missionstatement {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .missionstatement p {
+    padding-top: 20px;
+    text-align: justify;
+  }
+  
+  .missionstatement h1 {
+    text-align: center;
+  }
+  
+  .categories {
+    display: flex;
+    max-width: 1200px;
+    padding: 10px;
+    margin: 10px;
+  }
+  
+  .recipecategories {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+  }
+  
+  .recipecategories img {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    opacity: 0.8;
+  }
+  
+  .recipecategories div {
+    margin: 0 10px 20px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .recipecategories h4 {
+    font-size: 2rem;
+    font-weight: bold;
+    width: 100%;
+    background-color: #404040;
+    text-align: center;
+  }
+  
+  .recipecards {
+    padding-top: 60px;
+  }
+  
+  .recipecards img {
+    height: 100px;
+    width: 100px;
+  }
+  
+  .recipecards div {
+    display: flex;
+    flex-flow: row;
+  }
+  
+  .recipecards span {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 10px;
+  }
+  
+  .recipecards h5 {
+    font-weight: bold;
+    font-size: 1.25rem;
+    padding-bottom: 10px;
+  }
+  
+  /* Mobile Rules */
+  
+  @media screen and (max-width: 375px) {
+    .mission {
+      max-width: 350px;
+    }
+  
+    .nav {
+      max-width: 350px;
+    }
+  }
+  
+  .recipecards img {
+    flex-shrink: 1;
+  }
+  
+  .navlinks > li {
+    font-size: 0.8rem;
+  }
+  
+  /* Tablet Rules */
+  
+  @media screen and (max-width: 1194px) {
+    .mission img {
+      display: none;
+    }
+  }
+  
+  /* Laptop Rules */
+  @media screen and (max-width: 1980px) {
+    .recipecategories {
+      max-width: 1200px;
+    }
+  }
+  
+  /* Desktop Rules */
+  
+  @media screen and (min-width: 1980px) {
+    .categories {
+      min-width: 1980px;
+    }
+  }
+  
