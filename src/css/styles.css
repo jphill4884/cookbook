@@ -34,8 +34,8 @@
   }
   
   header img {
-    height: 69px;
-    width: 69px;
+    max-height: 69px;
+    max-width: 69px;
   }
   
   .navlinks {
@@ -156,22 +156,25 @@
   
   /* Mobile Rules */
   
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 425px) {
+    header {
+      visibility: hidden;
+    }
+
+    header img {
+      visibility: visible;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
     .mission {
-      max-width: 350px;
+      max-width: 320px;
     }
-  
-    .nav {
-      max-width: 350px;
+
+    .missionstatement p {
+     position: relative;
     }
-  }
-  
-  .recipecards img {
-    flex-shrink: 1;
-  }
-  
-  .navlinks > li {
-    font-size: 0.8rem;
   }
   
   /* Tablet Rules */
