@@ -34,13 +34,14 @@
   }
   
   header img {
-    max-height: 69px;
     max-width: 69px;
+    max-height: 69px;
   }
   
   .navlinks {
     display: flex;
-    flex-flow: row;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
   
   .navlinks > li {
@@ -159,13 +160,22 @@
   @media screen and (max-width: 425px) {
     header {
       visibility: hidden;
+      display: flex;
+      align-items: center;
+      position: relative;
+      width: 100%;
+      height: fit-content;
+    }
+
+    #headerimage {
+      visibility: visible;
+      min-width: 100%;
+      height: auto;
     }
 
     header img {
-      visibility: visible;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
+      max-width: none;
+      max-height: none;
     }
 
     .mission {
