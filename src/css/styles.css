@@ -12,6 +12,11 @@
     flex-flow: wrap;
   }
   
+  a {
+    text-decoration: none;
+    color: #f1f1f1;
+  }
+  
   hr {
     color: #f1f1f1;
   }
@@ -145,6 +150,7 @@
   .recipecards img {
     height: 100px;
     width: auto;
+    opacity: 0.8;
   }
   
   .recipecards div {
@@ -163,11 +169,6 @@
     font-weight: bold;
     font-size: 1.25rem;
     padding-bottom: 10px;
-  }
-
-  .recipecards a {
-    text-decoration: none;
-    color: #f1f1f1;
   }
 
   .recipesection {
@@ -219,6 +220,16 @@
     .missionstatement p {
      position: relative;
     }
+  }
+
+  .recipesection {
+    display: flex;
+    flex: row wrap;
+    max-width: 1000px;
+    justify-content: center;
+    margin-top: 1.9rem;
+    border: solid 1px black;
+    padding: 1.2rem;
   }
   
   /* Tablet Rules */
