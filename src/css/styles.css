@@ -151,11 +151,15 @@
     height: 100px;
     width: auto;
     opacity: 0.8;
+    object-fit: cover;
+    max-width: 100px;
+    max-height: 100px;
   }
   
   .recipecards div {
     display: flex;
     flex-flow: row;
+    margin-bottom: 1.2rem;
   }
   
   .recipecards span {
@@ -183,7 +187,7 @@
 
   table {
     table-layout: fixed;
-    width: 400px;
+    max-width: 400px;
   }
 
   .instructions {
@@ -220,16 +224,16 @@
     .missionstatement p {
      position: relative;
     }
-  }
 
   .recipesection {
     display: flex;
-    flex: row wrap;
-    max-width: 1000px;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     margin-top: 1.9rem;
     border: solid 1px black;
     padding: 1.2rem;
+    }
   }
   
   /* Tablet Rules */
