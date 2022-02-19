@@ -134,6 +134,10 @@
     text-align: center;
   }
   
+.recipes {
+  max-width: 800px;
+}
+
   .recipecards {
     padding-top: 60px;
   }
@@ -159,6 +163,11 @@
     font-weight: bold;
     font-size: 1.25rem;
     padding-bottom: 10px;
+  }
+
+  .recipecards a {
+    text-decoration: none;
+    color: #f1f1f1;
   }
 
   .recipesection {
