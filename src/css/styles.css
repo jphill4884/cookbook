@@ -20,6 +20,12 @@
     font-size: 3rem;
     font-weight: bold;
   }
+
+  h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.2rem;
+  }
   
   header {
     display: flex;
@@ -134,7 +140,7 @@
   
   .recipecards img {
     height: 100px;
-    width: 100px;
+    width: auto;
   }
   
   .recipecards div {
@@ -153,6 +159,25 @@
     font-weight: bold;
     font-size: 1.25rem;
     padding-bottom: 10px;
+  }
+
+  .recipesection {
+    display: flex;
+    flex-direction: row;
+    max-width: 1000px;
+    justify-content: center;
+    margin-top: 1.9rem;
+    border: solid 1px black;
+    padding: 1.2rem;
+  }
+
+  table {
+    table-layout: fixed;
+    width: 400px;
+  }
+
+  .instructions {
+    margin-left: 1.9rem;
   }
   
   /* Mobile Rules */
